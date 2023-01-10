@@ -141,6 +141,7 @@ section{
     background: #fff;
 }
 
+
 .shopping-cart .box{
     display: flex;
     align-items: center;
@@ -240,7 +241,39 @@ padding-bottom: 1rem;
     right: 2rem;
     transition: .4s linear;
 }
+.categories .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap:1.5rem;
+}
+.categories .box-container .box{
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    outline-offset: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+}
 
+.categories .box-container .box:hover{
+    outline-offset: var(--outline-hover);
+    outline-offset: 0rem;
+}
+.categories .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+.categories .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    line-height: 1.8; 
+}
+.categories .box-container .box p{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 1.8;
+} 
 @media(max-width:991px){
     html{
         font-size: 55%;
@@ -285,6 +318,9 @@ padding-bottom: 1rem;
     .heading{
         font-size: 2.5rem;
     }
+}
+.heading span{
+    color: var(--orange);
 }
 .home{
     display: flex;
@@ -349,4 +385,38 @@ padding-bottom: 1rem;
     padding: 1rem 0;
 
 }
+.products .product-slider:first-child{
+  margin-bottom: 2rem;
 
+}
+.products .product-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+.products .product-slider .box:hover{
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+.products .product-slider .box img{
+    height: 20rem;
+}
+.products .product-slider .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.products .product-slider .box .price{
+ font-size: 2rem;
+ color: var(--light-color);
+ padding: .5rem 0;
+}
+.stars{
+    font-size: 1.7rem;
+    color: var(--orange);
+    padding: .5rem 0;
+}
