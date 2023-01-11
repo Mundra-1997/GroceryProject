@@ -273,7 +273,11 @@ padding-bottom: 1rem;
     font-size: 1.7rem;
     color: var(--light-color);
     line-height: 1.8;
+    padding: 1rem 0;
 } 
+
+
+
 @media(max-width:991px){
     html{
         font-size: 55%;
@@ -420,3 +424,37 @@ padding-bottom: 1rem;
     color: var(--orange);
     padding: .5rem 0;
 }
+.review .review-slider{
+    padding: 1rem;
+  }
+.review .review-slider .box{
+      background: #fff;
+      border-radius: .5rem;
+      text-align: center;
+      padding: 3rem 2rem;
+      outline-offset: -1rem;
+      outline: var(--outline);
+      box-shadow: var(--box-shadow);
+      transition: .2s linear;
+  }
+  .review .review-slider .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+  }
+  .review .review-slider .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+  }
+  .review .review-slider .box p{
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1.5rem;
+  }
+  .review .review-slider .box h3{
+    padding-bottom: .5rem;
+    color: var(--black);
+    font-size: 2.2rem;
+  }
+ 
