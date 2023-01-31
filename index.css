@@ -139,20 +139,80 @@ section{
     box-shadow: var(--box-shadow);
     width: 30rem;
     background: #fff;
+    height: 30rem;
 }
-
-
-.shopping-cart .box{
+.shopping-cart div{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 10rem;
+}
+.shopping-cart1{
+    position: absolute;
+    top: 110%;
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    position: relative;
+    flex-direction: column;
+    right: -110%;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    background: #fff;
+    height: auto;
+}
+#calculate{
+    padding-left: 5.5rem;
+}
+#bill {
+    font-size: 3rem;
+    padding-left: 1.5rem;
+    padding-left: 5.5rem;
+    
+}
+.shopping-cart1 .box{
+    display: none;
+}
+/* 
+.shopping-cart1 .box{
 
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: nowrap;
+} */
+.doggo{
+    display: grid;
+  grid-template-columns: auto auto auto auto auto;
+    /* align-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+} */
 }
-.shopping-cart .box img{
-    height: 10rem;
+.content p{
+    font-size: 2rem;
+   text-align: center;
+   padding-top: 1.5rem;
 }
-.shopping-cart .box .fa-trash{
+.fa-square-plus{
+    padding-top: 1.5rem;
+    font-size: 3rem;
+    padding-left: 0.5rem;
+}
+.fa-square-minus{
+    padding-top: 1.5rem;
+    font-size: 3rem;
+    padding-left: 0.5rem;
+}
+.quantity{
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    padding-top: 1.5rem;
+}
+
+
+.shopping-cart1 .box  img{
+    height: 5rem;
+}
+.shopping-cart1 .box  .fa-trash{
     font-size: 2rem;
     position: absolute;
     top: 50%;
@@ -161,22 +221,24 @@ section{
     color: var(--light-color);
     transform: translateY(-50%);
 }
-.shopping-cart .box .fa-trash:hover{
+.shopping-cart1 .box  .fa-trash:hover{
     color: var(--orange);
 }
-.shopping-cart .box .content h3{
+.shopping-cart1 .box .content{
+     padding-bottom: 2.7rem;
+    font-size: 2rem;
+}
+.shopping-cart1 .box .content h3{
 color: var(--black);
 font-size: 1.7rem;
 padding-bottom: 1rem;
 }
-.shopping-cart .box .content span{
+.shopping-cart1 .box  span{
     color: var(--light-color);
     font-size: 1.6rem;
 }
-.shopping-cart .box .content .quantity{
-        padding-left: 1rem;
-}
-.shopping-cart .total{
+
+.shopping-cart1 .total{
     font-size: 2.5rem;
     padding: 1rem 0;
     text-align: center;

@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+   
+    <script src="https://kit.fontawesome.com/fd5db32f45.js" crossorigin="anonymous"></script>
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -32,27 +34,76 @@
     <input type="search" id="search-box" placeholder="search here">
     <label for="search-box" class="fas fa-search"></label>
    </form>
-    <div class="shopping-cart">
-        <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-1.png" alt="">
+     <div class="shopping-cart">
+        <div>Cart is Empty</div>
+       
+    </div> 
+    <div class="shopping-cart1">
+         <div class="box" id="cartonion" >
+           
+            <div><img  src="image/product-2.png" style="height: 5rem;" alt=""></div>
             <div class="content">
-                <h3>watermelon</h3>
-                <span class="price">Rs 75/-</span>
-                <span class="quantity">qty:1</span>
-            </div>
+                <p>Onion</p></div>
+               <div class="quantity" id="showonion"></div>
+              <div id="increonion"><i  class="fa-solid fa-square-plus"></i></div>
+                <div id="decreonion"><i class="fa-solid fa-square-minus"></i></div>
+            <!-- <i class="fas fa-trash"></i> -->
         </div>
-        <div class="box">
-            <i class="fas fa-trash"></i>
-            <img src="image/cart-img-2.png" alt="">
-            <div class="content">
-                <h3>Onion</h3>
-                <span class="price">Rs 5/-</span>
-                <span class="quantity">qty:1</span>
-            </div>
+        <div class="box" id="cartpatato" >
+         
+               <div><img src="image/product-5.png" style="height: 5rem;" alt=""></div> 
+            
+                <div class="content"><p>Patato</p></div>
+                <div class="quantity" id="showpatato"></div>
+          
+            <div id="increpatato"><i class="fa-solid fa-square-plus"></i></div>
+            <div id="decrepatato"><i class="fa-solid fa-square-minus"></i></div>
         </div>
-        <div class="total">Total : Rs 80/-</div>
-        <a href="" class="btn">check out</a>
+        <div class="box" id="cartorange"  >
+           
+            <div><img src="image/product-1.png" style="height: 5rem;" alt=""></div>
+            
+                <div class="content"><p>Orange</p></div>
+                <div class="quantity" id="showorange"></div>
+            
+            <div id="increorange"> <i class="fa-solid fa-square-plus"></i></div>
+            <div id="decreorange"><i class="fa-solid fa-square-minus"></i></div>
+        </div>
+        <div class="box" id="cartavocado"  >
+           
+            <div><img src="image/product-6.png" style="height: 5rem;" alt=""></div>
+            
+                <div class="content"><p>Avocado</p></div>
+                
+                <div class="quantity" id="showavocado"></div>
+            
+            <div id="increavocado"> <i class="fa-solid fa-square-plus"></i></div>
+            <div id="decreavocado"><i class="fa-solid fa-square-minus"></i></div>
+        </div>
+        <div class="box" id="cartcarrot"  >
+            
+            <div><img src="image/product-7.png" style="height: 5rem;" alt=""></div>
+            
+                <div class="content"><p>Carrot</p></div>
+                
+                <div class="quantity" id="showcarrot"></div>
+           
+            <div id="increcarrot"> <i class="fa-solid fa-square-plus"></i></div>
+            <div id="decrecarrot"><i class="fa-solid fa-square-minus"></i></div>
+        </div>
+        <div class="box" id="cartcabbage"  >
+            
+            <div><img src="image/product-4.png" style="height: 5rem;" alt=""></div>
+            
+                <div class="content"><p>Cabbage</p></div>
+                
+                <div class="quantity" id="showcabbage"></div>
+            
+            <div id="increcabbage"> <i class="fa-solid fa-square-plus"></i></div>
+            <div id="decrecabbage"><i class="fa-solid fa-square-minus"></i></div>
+        </div>
+        <div id="calculate"><button class="btn" >Calculate Bill</button></div>
+        <div ><p id="bill"></p></div>
     </div>
     <form action="" class="login-form">
         <h3>Login</h3>
@@ -100,7 +151,7 @@
             <div class="swiper-slide box">
                 <img src="image/product-1.png" alt="">
                 <h3>orange</h3>
-                <div class="price">rs 5 - 10/-</div>
+                <div class="price">Rs 60 per kg</div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -108,12 +159,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <input type="button" value="Add to cart" class="btn" id="orange1">
             </div>
             <div class="swiper-slide box">
                 <img src="image/product-2.png" alt="">
                 <h3>onion</h3>
-                <div class="price">rs 5 - 10/-</div>
+                <div class="price">Rs 25 per kg</div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -121,12 +172,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <input type="button" value="Add to cart" class="btn" id="onion2">
             </div>
             <div class="swiper-slide box">
                 <img src="image/product-4.png" alt="">
                 <h3>cabbage</h3>
-                <div class="price">rs 5 - 10/-</div>
+                <div class="price">Rs 20 per kg</div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -134,12 +185,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <input type="button"  value="Add to cart" class="btn" id="cabbage3">
             </div>
             <div class="swiper-slide box">
                 <img src="image/product-5.png" alt="">
                 <h3>patatoes</h3>
-                <div class="price">rs 5 - 10/-</div>
+                <div class="price">Rs 20 per kg</div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -147,12 +198,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <input type="button" value="Add to cart" class="btn" id="patatoes4">
             </div>
             <div class="swiper-slide box">
                 <img src="image/product-6.png" alt="">
                 <h3>avocado</h3>
-                <div class="price">rs 5 - 10/-</div>
+                <div class="price">Rs 150 per kg</div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -160,12 +211,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <input type="button" value="Add to cart" class="btn" id="avocados5">
             </div>
             <div class="swiper-slide box">
                 <img src="image/product-7.png" alt="">
                 <h3>carrot</h3>
-                <div class="price">rs 5 - 10/-</div>
+                <div class="price">Rs 15 per kg</div>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -173,7 +224,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <a href="#" class="btn">add to cart</a>
+                <input type="button" value="Add to cart" class="btn" id="carrots6">
             </div>
         </div>
      </div>
