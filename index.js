@@ -152,6 +152,8 @@ var swiper = new Swiper(".product-slider", {
   let qtAvocado = 0;
   let qtCabbage = 0;
 
+  
+
 
   document.getElementById('orange1').addEventListener('click',()=>{
     flag++;
@@ -194,7 +196,7 @@ document.getElementById('decreonion').addEventListener('click',()=>{
   if(qtOnion===0){
     document.getElementById('cartonion').classList.add('box');
     document.getElementById('cartonion').classList.remove('doggo');
-    return;
+    
   }
   
   update();
