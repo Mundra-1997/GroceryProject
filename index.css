@@ -162,6 +162,10 @@ section{
 #calculate{
     padding-left: 5.5rem;
 }
+#cartnumber{
+    position: relative;
+    top: 0.1px;
+}
 #bill {
     font-size: 3rem;
     padding-left: 1.5rem;
